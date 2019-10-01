@@ -7,6 +7,23 @@ export default props => (
   <Header {...props}>
     <Styled.a
       as={Link}
+      to="/blog"
+      css={css({
+        ml: 2,
+        mr: `auto`,
+        fontFamily: `heading`,
+        fontWeight: `bold`,
+        textDecoration: `none`,
+        color: `inherit`,
+        ":hover": {
+          textDecoration: `underline`,
+        },
+      })}
+    >
+      Blog
+    </Styled.a>
+    <Styled.a
+      as={Link}
       to="/notes"
       css={css({
         ml: 2,
