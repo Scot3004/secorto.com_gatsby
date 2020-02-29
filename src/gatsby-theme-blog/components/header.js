@@ -1,43 +1,56 @@
-import React from "react"
-import { Link } from "gatsby"
-import { css, Styled } from "theme-ui"
-import Header from "gatsby-theme-blog/src/components/header"
+import React from "react";
+import { Link } from "gatsby";
+import { css, Styled, Flex } from "theme-ui";
+import ColorModeSwitch from "./color-mode-switch";
 
-export default props => (
-  <Header {...props}>
-    <Styled.a
-      as={Link}
-      to="/blog"
-      css={css({
-        ml: 2,
-        mr: `auto`,
-        fontFamily: `heading`,
-        fontWeight: `bold`,
-        textDecoration: `none`,
-        color: `inherit`,
-        ":hover": {
-          textDecoration: `underline`,
-        },
-      })}
-    >
-      Blog
-    </Styled.a>
-    <Styled.a
-      as={Link}
-      to="/notes"
-      css={css({
-        ml: 2,
-        mr: `auto`,
-        fontFamily: `heading`,
-        fontWeight: `bold`,
-        textDecoration: `none`,
-        color: `inherit`,
-        ":hover": {
-          textDecoration: `underline`,
-        },
-      })}
-    >
-      Notes
-    </Styled.a>
-  </Header>
-)
+const navLinkStyle = css({
+  ml: 2,
+  fontFamily: `heading`,
+  fontWeight: `bold`,
+  textDecoration: `none`,
+  color: `inherit`,
+  ":hover": {
+    textDecoration: `underline`
+  }
+})
+
+export default ({ children, title, ...props }) => {
+  return (
+    <Flex>
+      <Styled.h3
+        as="p"
+        css={{
+          my: 0
+        }}
+      >
+        <Styled.a
+          as={Link}
+          css={css({
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `primary`
+          })}
+          to={`/`}
+        >
+          {title}
+        </Styled.a>
+      </Styled.h3>
+      <Styled.div css={css({ mx: `auto` })} />
+      <Styled.a
+        as={Link}
+        to="/blog"
+        css={navLinkStyle}
+      >
+        Blog
+      </Styled.a>
+      <Styled.a
+        as={Link}
+        to="/notes"
+        css={navLinkStyle}
+      >
+        Notes
+      </Styled.a>
+      <ColorModeSwitch css={css({ ml: 2 })} />
+    </Flex>
+  );
+};
