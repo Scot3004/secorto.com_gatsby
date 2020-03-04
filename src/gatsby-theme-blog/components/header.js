@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { css, Styled, Flex } from "theme-ui";
-import ColorModeSwitch from "./color-mode-switch";
+import ColorModeSwitch from "../../components/color-mode-switch";
 
 const navLinkStyle = css({
   ml: 2,
