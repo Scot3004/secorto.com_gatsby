@@ -8,7 +8,10 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.5",
+    "@mdx-js/react": "^1.6.5",
     "gatsby": "^2.13.13",
+    "gatsby-plugin-mdx": "^1.2.15",
     "gatsby-theme-blog": "^1.0.0",
     "gatsby-theme-notes": "^1.0.0",
     "react": "^16.8.6",
