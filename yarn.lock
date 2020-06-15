@@ -7312,7 +7312,7 @@ gatsby-theme-blog-core@^1.5.42:
     gatsby-transformer-sharp "^2.5.5"
     remark-slug "^5.1.2"
 
-gatsby-theme-blog@^1.0.0:
+gatsby-theme-blog@^1.6.42:
   version "1.6.42"
   resolved "https://registry.yarnpkg.com/gatsby-theme-blog/-/gatsby-theme-blog-1.6.42.tgz#41bc9feacfabd3d423c149bd2c0196792e06f3a7"
   integrity sha512-b+518kwJf68sz/9XRCc6jut5zXRZAxBRtgVxaUqDYJUOnC53g6gcrngF6xB2XyYGRiAsgA17mO4MkCW2XodrdA==
@@ -7337,7 +7337,7 @@ gatsby-theme-blog@^1.0.0:
     typeface-montserrat "0.0.75"
     typography-theme-wordpress-2016 "^0.16.19"
 
-gatsby-theme-notes@^1.0.0:
+gatsby-theme-notes@^1.3.68:
   version "1.3.68"
   resolved "https://registry.yarnpkg.com/gatsby-theme-notes/-/gatsby-theme-notes-1.3.68.tgz#6864d15e47ae0ca9d29907059997b255567a4172"
   integrity sha512-a6BSdME3yCpGHS8ZNiO7SYPB/D9NUy22S0/sBau8TyUIyXF5vxOWgqNWHgy5x0tnScLnJH09jZC8OHh1u8oIwA==
@@ -7376,7 +7376,7 @@ gatsby-transformer-sharp@^2.5.5:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby@^2.13.13, gatsby@^2.23.3:
+gatsby@^2.23.3:
   version "2.23.3"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.3.tgz#d5d7bbe9c68b9d5f982520b06c6a057e034bc2c3"
   integrity sha512-uVRJUQuTga7GMag9Rrb+3amjSVoGDPgSTXivhDXW/TzR5ouBr6/rudjcDTruRwFnKsAwUExrYMMXPRCwkMFctQ==
@@ -12371,7 +12371,7 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.12.0, react-dom@^16.8.6:
+react-dom@^16.12.0, react-dom@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
   integrity sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
@@ -12536,7 +12536,7 @@ react-switch@^5.0.1:
   dependencies:
     prop-types "^15.6.2"
 
-react@^16.12.0, react@^16.8.0, react@^16.8.6:
+react@^16.12.0, react@^16.13.1, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
