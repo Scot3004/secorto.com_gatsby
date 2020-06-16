@@ -43,13 +43,6 @@ export default ({ children, title, ...props }) => {
       >
         Blog
       </Styled.a>
-      <Styled.a
-        as={Link}
-        to="/notes"
-        css={navLinkStyle}
-      >
-        Notes
-      </Styled.a>
       <ColorModeSwitch css={css({ ml: 2 })} />
     </Flex>
   );
