@@ -8,7 +8,7 @@ export default ({ location, posts, title }) => {
   return (
     <Layout location={location} title={title}>
       {posts.map(({node})=> (
-        <Link to={node.slug} variant='nav'>
+        <Link to={node.slug} variant='nav' key={node.slug}>
           <Styled.div
             sx={{
               maxWidth: 256,

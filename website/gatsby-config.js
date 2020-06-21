@@ -30,7 +30,13 @@ module.exports = {
           basePath: `/portafolio`,
         }
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/portafolio/*`],
+      },
+    },
   ],
   siteMetadata: {
     title: `SeCOrTo`,

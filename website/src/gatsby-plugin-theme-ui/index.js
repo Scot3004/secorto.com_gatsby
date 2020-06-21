@@ -6,7 +6,7 @@ export default merge({}, baseTheme, {
   useColorSchemeMediaQuery: true,
   colors: {
     text: "#222",
-    primary: "#00adb5",
+    primary: "#004f53",
     modes: {
       dark: {
         primary: "#699ea0"

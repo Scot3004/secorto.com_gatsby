@@ -39,6 +39,7 @@ export default (props) => {
   return (
     <Switch {...props}
         aria-label="Toggle dark mode"
+        aria-checked={isDark}
         checkedIcon={checkedIcon}
         uncheckedIcon={uncheckedIcon}
         checked={isDark}
