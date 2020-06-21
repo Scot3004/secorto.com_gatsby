@@ -1,4 +1,5 @@
 const purple60 = `#663399`
+const purple90 = `#993399`
 const purple30 = `#D9BAE8`
 const grey90 = `#232129`
 const black80 = `#1B1F23`
@@ -12,6 +13,7 @@ export default {
   text: grey90,
   background: white,
   primary: purple60,
+  primaryHover: purple90,
   secondary: black80,
   muted: lightGray,
   highlight: opaqueLightYellow,

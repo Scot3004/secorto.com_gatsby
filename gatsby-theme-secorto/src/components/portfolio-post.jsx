@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import Layout from "./layout"
+import Bio from "./bio"
 import { Styled } from "theme-ui"
 
 import { MDXRenderer } from "gatsby-plugin-mdx"
@@ -22,6 +23,7 @@ const Post = ({
     <Styled.p>Responsabilidades: {post.responsibilities}</Styled.p>
     <MDXRenderer>{post.body}</MDXRenderer>
     <Gallery items={post.gallery}/>
+    <Bio />
   </Layout>
 )
 

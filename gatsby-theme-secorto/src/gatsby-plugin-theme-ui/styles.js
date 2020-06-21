@@ -1,6 +1,6 @@
 export default {
   root: {
-    fontFamily: `body`,
+    fontFamily: `body`
   },
   pre: {
     variant: `prism`,
@@ -31,6 +31,9 @@ export default {
   // from typography overrideThemeStyles
   a: {
     color: `primary`,
+    ":hover": {
+      color: `primaryHover`
+    }
   },
   hr: {
     borderColor: `muted`,
@@ -52,5 +55,14 @@ export default {
     "&.translation": {
       fontSize: `1em`,
     },
+  },
+  navLink:  {
+    fontSize: 24,
+    color: 'primary',
+    p: 2,
+    textDecoration: 'none',
+    ":hover": {
+      color: "primaryHover"
+    }
   },
 }

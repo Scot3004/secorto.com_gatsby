@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import { Styled } from 'theme-ui'
+import { Card, Text } from 'theme-ui'
 import Layout from "./layout"
 
 export default ({ location, posts, title }) => {
@@ -9,15 +9,15 @@ export default ({ location, posts, title }) => {
     <Layout location={location} title={title}>
       {posts.map(({node})=> (
         <Link to={node.slug} variant='nav' key={node.slug}>
-          <Styled.div
+          <Card
             sx={{
               maxWidth: 256,
             }}>
             <Img fluid={node.image.childImageSharp.fluid}></Img>
-            <Styled.p>
+            <Text>
               {node.title}
-            </Styled.p>
-          </Styled.div>
+            </Text>
+          </Card>
         </Link>
       ))}
     </Layout>

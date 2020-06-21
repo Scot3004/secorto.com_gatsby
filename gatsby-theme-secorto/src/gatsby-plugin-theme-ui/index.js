@@ -5,15 +5,19 @@ import styles from "./styles"
 import prism from "./prism"
 
 export default merge(typography, {
-  initialColorMode: `light`,
+  useColorSchemeMediaQuery: true,
   colors,
-  fonts: {
-    heading: `Montserrat, sans-serif`,
-    monospace: `Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
-  },
   sizes: {
     container: 672,
   },
   styles,
   prism,
+  navlink:  {
+    fontSize: 128,
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    color: 'primary',
+    mt: 4,
+    mb: 2,
+  }
 })

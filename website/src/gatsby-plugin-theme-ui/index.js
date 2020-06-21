@@ -3,7 +3,6 @@ import merge from "lodash.merge"
 // lodash.merge will deeply merge custom values with the
 // blog theme's defaults
 export default merge({}, baseTheme, {
-  useColorSchemeMediaQuery: true,
   colors: {
     text: "#222",
     primary: "#004f53",
