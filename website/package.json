@@ -1,0 +1,19 @@
+{
+  "name": "@scot3004/website",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.5",
+    "@mdx-js/react": "^1.6.5",
+    "@scot3004/gatsby-theme-secorto": "*",
+    "gatsby": "^2.23.3",
+    "gatsby-plugin-manifest": "^2.4.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

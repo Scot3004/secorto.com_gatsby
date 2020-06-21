@@ -1,0 +1,16 @@
+{
+  "name": "scot3004-website-workspaces",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace @scot3004/website build"
+  },
+  "workspaces": [
+    "gatsby-theme-portfolio-core",
+    "gatsby-theme-secorto",
+    "website",
+    "example"
+  ]
+}
