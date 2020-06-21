@@ -1,9 +1,9 @@
 import React from "react"
 
 import { useColorMode } from "theme-ui"
-import Switch from "gatsby-theme-blog/src/components/switch"
-import sun from "gatsby-theme-blog/assets/sun.png"
-import moon from "gatsby-theme-blog/assets/moon.png"
+import Switch from "./switch"
+import sun from "../../assets/sun.png"
+import moon from "../../assets/moon.png"
 
 const iconCss = [{ pointerEvents: `none`, margin: 4 }]
 

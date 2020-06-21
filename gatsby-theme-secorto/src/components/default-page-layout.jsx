@@ -1,6 +1,6 @@
 import React from "react"
-import BlogLayout from "gatsby-theme-blog/src/components/layout"
-import SEO from "gatsby-theme-blog/src/components/seo"
+import BlogLayout from "./layout"
+import SEO from "./seo"
 import { useStaticQuery, graphql } from 'gatsby'
 
 

@@ -1,9 +1,31 @@
 import React from "react"
-import BlogLayout from "gatsby-theme-blog/src/components/layout"
-import SEO from "gatsby-theme-blog/src/components/seo"
+import { css, Styled } from "theme-ui"
+import Header from "./header"
+import useBlogThemeConfig from "../hooks/configOptions.js"
+import Helmet from "react-helmet"
 
-export default props => 
-<BlogLayout {...props}>
-  <SEO title={props.title}/>
-  {props.children}
-</BlogLayout>
+export default ({ children, ...props }) => {
+  const blogThemeConfig = useBlogThemeConfig()
+  const { webfontURL } = blogThemeConfig
+
+  return (
+    <Styled.root>
+      <Helmet>
+        <link rel="stylesheet" href={webfontURL} />
+      </Helmet>
+      <Header {...props} />
+      <div>
+        <div
+          css={css({
+            maxWidth: `container`,
+            mx: `auto`,
+            px: 3,
+            py: 4,
+          })}
+        >
+          {children}
+        </div>
+      </div>
+    </Styled.root>
+  )
+}

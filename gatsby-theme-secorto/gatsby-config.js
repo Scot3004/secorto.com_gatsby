@@ -16,7 +16,7 @@ module.exports = options => {
       `gatsby-remark-images`,
       // with gatsby-plugin-theme-ui, the last theme in the config
       // will override the theme-ui context from other themes
-      { resolve: `gatsby-theme-blog`,
+      { resolve: `gatsby-theme-blog-core`,
         options: blog,
       },
       {
