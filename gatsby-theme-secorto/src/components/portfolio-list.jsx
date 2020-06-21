@@ -1,25 +1,36 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import { Card, Text } from 'theme-ui'
+import { Card, Text, Flex, css } from 'theme-ui'
 import Layout from "./layout"
 
 export default ({ location, posts, title }) => {
   return (
     <Layout location={location} title={title}>
-      {posts.map(({node})=> (
-        <Link to={node.slug} variant='nav' key={node.slug}>
-          <Card
-            sx={{
-              maxWidth: 256,
-            }}>
-            <Img fluid={node.image.childImageSharp.fluid}></Img>
-            <Text>
-              {node.title}
-            </Text>
-          </Card>
-        </Link>
-      ))}
+      <Flex css={css({
+        flexWrap: "wrap",
+        justifyContent: "space-between"
+      })}>
+        {posts.map(({node})=> (
+            <Card
+              as={Link}
+              to={node.slug}
+              key={node.slug}
+              sx={{
+                flex: ["0 1 100%", "0 1 49%", "0 1 33%"],
+                textDecoration: 'none',
+                marginBottom: "0.5em"
+              }}>
+              <Img sizes={{...node.image.childImageSharp.fluid, aspectRatio: 16/9 }}></Img>
+              <Text sx={{
+                color: 'primary'
+              }}>
+                {node.title}
+              </Text>
+            </Card>
+        ))}
+      </Flex>
     </Layout>
   )
 }

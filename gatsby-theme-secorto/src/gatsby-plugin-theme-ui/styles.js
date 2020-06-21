@@ -42,6 +42,7 @@ export default {
     code: {
       fontSize: `inherit`,
     },
+    textAlign: `justify`
   },
   li: {
     code: {
@@ -59,7 +60,7 @@ export default {
   navLink:  {
     fontSize: 24,
     color: 'primary',
-    p: 2,
+    p: [1, 2],
     textDecoration: 'none',
     ":hover": {
       color: "primaryHover"
