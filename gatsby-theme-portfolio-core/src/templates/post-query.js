@@ -55,19 +55,17 @@ export const query = graphql`
         }
       }
     }
-    previous: blogPost(id: { eq: $previousId }) {
+    previous: portfolioPost(id: { eq: $previousId }) {
       id
       excerpt
       slug
       title
-      date(formatString: "MMMM DD, YYYY")
     }
-    next: blogPost(id: { eq: $nextId }) {
+    next: portfolioPost(id: { eq: $nextId }) {
       id
       excerpt
       slug
       title
-      date(formatString: "MMMM DD, YYYY")
     }
   }
 `

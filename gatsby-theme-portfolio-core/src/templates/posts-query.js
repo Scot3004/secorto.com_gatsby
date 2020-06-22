@@ -28,7 +28,6 @@ export const query = graphql`
               fluid(maxWidth: 500, quality: 100) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
-
               }
             }
           }

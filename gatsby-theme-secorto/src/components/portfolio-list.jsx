@@ -3,11 +3,14 @@ import { jsx } from 'theme-ui'
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { Card, Text, Flex, css } from 'theme-ui'
+
 import Layout from "./layout"
+import SEO from "./seo"
 
 export default ({ location, posts, title }) => {
   return (
     <Layout location={location} title={title}>
+      <SEO title="Portfolio" />
       <Flex css={css({
         flexWrap: "wrap",
         justifyContent: "space-between"
