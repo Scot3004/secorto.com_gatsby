@@ -21,13 +21,19 @@ export default ({ location, posts, title }) => {
               to={node.slug}
               key={node.slug}
               sx={{
-                flex: ["0 1 100%", "0 1 49%", "0 1 33%"],
+                flex: ["0 1 100%", "0 1 49%", "0 1 32%"],
                 textDecoration: 'none',
-                marginBottom: "0.5em"
+                marginBottom: "1em",
+                transition: "box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out",
+                transitionDelay: ".1s",
+                "&:hover": {
+                  transform: "translate(0, -4px)"
+                }
               }}>
               <Img sizes={{...node.image.childImageSharp.fluid, aspectRatio: 16/9 }}></Img>
               <Text sx={{
-                color: 'primary'
+                color: 'primary',
+                fontFamily: 'heading'
               }}>
                 {node.title}
               </Text>

@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "SeCOrTo",
-        short_name: "GatsbyJS",
+        short_name: "SeCOrTo",
         start_url: "/",
         background_color: "#699ea0",
         theme_color: "#699ea0",
@@ -28,7 +28,8 @@ module.exports = {
       options: {
         portfolio: {
           basePath: `/portafolio`,
-        }
+        },
+        webfontURL: 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'
       },
     },
     {

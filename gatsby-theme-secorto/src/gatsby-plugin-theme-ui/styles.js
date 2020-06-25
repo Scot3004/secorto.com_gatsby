@@ -59,6 +59,7 @@ export default {
   },
   navLink:  {
     fontSize: 24,
+    fontFamily: 'heading',
     color: 'primary',
     p: [1, 2],
     textDecoration: 'none',

@@ -22,4 +22,4 @@ gallery:
 ---
 La PyCon es un evento realizado por la comunidad Python. En colombia se realiza una vez al año el segundo fin de semana de febrero.
 
-He tenido la oportunidad de apoyar en logistica los años 2018 y 2019.
+He tenido la oportunidad de apoyar en logística los años 2018 y 2019.
