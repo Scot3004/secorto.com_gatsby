@@ -24,7 +24,14 @@ export default merge(typography, {
     primary: {
       padding: 2,
       borderRadius: 4,
-      boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
+      boxShadow: theme => `0 0 8px  ${theme.colors.text}`,
+      textDecoration: 'none',
+      marginBottom: "1em",
+      transition: "box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out",
+      transitionDelay: ".1s",
+      "&:hover": {
+        transform: "translate(0, -4px)"
+      }
     },
     compact: {
       padding: 1,

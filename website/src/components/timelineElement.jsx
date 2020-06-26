@@ -25,9 +25,9 @@ export default ({item}) => {
         contentStyle={{ 
           background: theme.colors.background,
           color: theme.colors.text,
-          border: `2px solid ${theme.colors.primary}`,
+          border: `3px solid ${theme.colors.primary}`,
           boxShadow: '0 2px 40px 0 rgba(0,0,0,0.07)'}}
-        contentArrowStyle={{ borderRight: `7px solid ${theme.colors.primary}` }}
+          contentArrowStyle={{ borderRight: `7px solid ${theme.colors.primary}` }}
         date={item.date}
         {...timelineTypeProps[item.type]}
   >

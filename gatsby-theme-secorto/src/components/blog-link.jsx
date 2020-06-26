@@ -1,27 +1,30 @@
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
+import { Styled, Card, Text, jsx } from "theme-ui"
+import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-const PostLink = ({ title, slug, date, excerpt }) => (
-  <div>
-    <Styled.h2
-      sx={{
-        mb: 1,
-      }}
-    >
-      <Styled.a
-        as={Link}
-        sx={{
-          textDecoration: `none`,
-        }}
-        to={slug}
-      >
-        {title || slug}
-      </Styled.a>
-    </Styled.h2>
-    <small>{date}</small>
-    <Styled.p>{excerpt}</Styled.p>
-  </div>
+const PostLink = ({ title, slug, date, excerpt, image }) => (
+  <Card
+    as={Link}
+    to={slug}
+    sx={{
+      flex: ["0 1 100%", "0 1 49%"],
+    }}>
+
+    {image && <Img sizes={{...image.childImageSharp.fluid, aspectRatio: 16/9 }}></Img>}
+    <Text sx={{
+      color: 'primary',
+      fontFamily: 'heading'
+    }}>
+      <h2>{title}</h2>
+      <small sx={{
+        color: 'text',
+      }}>{date}</small>
+      <Styled.p sx={{
+        color: 'text',
+      }}>{excerpt}</Styled.p>
+    </Text>
+  </Card>
 )
 
 export default PostLink

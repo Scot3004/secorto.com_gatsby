@@ -38,6 +38,7 @@ export default {
       text: lightWhite,
       background: grey90,
       primary: purple30,
+      primaryHover: white,
       secondary: lightWhite,
       muted: opaqueLightWhite,
       highlight: purple60,
