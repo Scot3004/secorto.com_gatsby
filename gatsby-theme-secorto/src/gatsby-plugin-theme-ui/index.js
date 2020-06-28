@@ -22,7 +22,6 @@ export default merge(typography, {
   },
   cards: {
     primary: {
-      padding: 2,
       borderRadius: 4,
       boxShadow: theme => `0 0 8px  ${theme.colors.text}`,
       textDecoration: 'none',

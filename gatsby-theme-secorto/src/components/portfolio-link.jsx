@@ -13,7 +13,9 @@ export default ({ slug, image, title }) => (
     <Img sizes={{...image.childImageSharp.fluid, aspectRatio: 16/9 }}></Img>
     <Text sx={{
       color: 'primary',
-      fontFamily: 'heading'
+      fontFamily: 'heading',
+      textAlign: 'center',
+      margin: 1
     }}>
       {title}
     </Text>

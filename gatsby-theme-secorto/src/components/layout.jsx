@@ -21,7 +21,7 @@ export default ({ children, ...props }) => {
             maxWidth: `container`,
             mx: `auto`,
             px: 3,
-            py: 2,
+            py: 3,
           })}
         >
           {children}

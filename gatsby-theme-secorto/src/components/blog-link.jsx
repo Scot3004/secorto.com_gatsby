@@ -14,14 +14,18 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
     {image && <Img sizes={{...image.childImageSharp.fluid, aspectRatio: 16/9 }}></Img>}
     <Text sx={{
       color: 'primary',
-      fontFamily: 'heading'
+      fontFamily: 'heading',
+      padding: 2
     }}>
-      <h2>{title}</h2>
+      <h2  sx={{
+        margin: 0
+      }}>{title}</h2>
       <small sx={{
         color: 'text',
       }}>{date}</small>
       <Styled.p sx={{
         color: 'text',
+        margin: 0
       }}>{excerpt}</Styled.p>
     </Text>
   </Card>
