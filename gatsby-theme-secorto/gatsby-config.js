@@ -1,7 +1,7 @@
 module.exports = options => {
   let {disableThemeUiStyling = false} = options
   let {portfolio = {
-    basePath: '/portfolio'
+    basePath: '/portafolio'
   } } = options
   let {blog = {
     basePath: '/blog'

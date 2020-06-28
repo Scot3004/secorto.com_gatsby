@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
+import { Link } from 'gatsby'
 
-import { Link } from "gatsby";
-import ColorModeSwitch from "./color-mode-switch";
+import Brand from './brand'
+import Menu from './menu'
 
-export default ({ children, title, ...props }) => {
+export default ({ title }) => {
   return (
     <header
       sx={{
@@ -16,25 +17,10 @@ export default ({ children, title, ...props }) => {
         sx={{
           variant: 'styles.navLink'
         }}>
-        {title}
+        <Brand title={title} />
       </Link>
       <div sx={{ mx: 'auto' }} />
-      <Link to='/blog'
-        sx={{
-          variant: 'styles.navLink'
-        }}>
-        Blog
-      </Link>
-      <Link to='/portfolio'
-        sx={{
-          variant: 'styles.navLink'
-        }}>
-        Portfolio
-      </Link>
-      <ColorModeSwitch sx={{
-          mr: 2
-        }}
-      />
+      <Menu />
     </header>
   );
 };

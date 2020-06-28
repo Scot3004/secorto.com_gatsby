@@ -1,8 +1,9 @@
-import React from "react"
-import { css, Styled } from "theme-ui"
-import Header from "./header"
-import useBlogThemeConfig from "../hooks/configOptions.js"
-import Helmet from "react-helmet"
+import React from 'react'
+import { css, Styled } from 'theme-ui'
+import Helmet from 'react-helmet'
+
+import Header from './header'
+import useBlogThemeConfig from '../hooks/configOptions.js'
 
 export default ({ children, ...props }) => {
   const blogThemeConfig = useBlogThemeConfig()
@@ -20,7 +21,7 @@ export default ({ children, ...props }) => {
             maxWidth: `container`,
             mx: `auto`,
             px: 3,
-            py: 4,
+            py: 2,
           })}
         >
           {children}
