@@ -1,14 +1,15 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-import Logo from '../../../assets/logo.svg'
+import Logo from './logo.svg'
 
 export default () => (
   <div
     sx={{
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      padding: 0
     }}>
     <img
       src={Logo} alt="logo" 

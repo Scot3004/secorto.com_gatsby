@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const StyledBurger = styled.button`
   position: fixed;
-  top: 2%;
+  top: .6rem;
   left: 1rem;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => open ? (props=> props.theme.colors.text) : (props=> props.theme.colors.primary)};
+    background: ${({ open }) => open ? (props=> props.theme.colors.sidebar.color) : (props=> props.theme.colors.primary)};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

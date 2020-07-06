@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 
-import Brand from './brand'
+import Brand from './brand/header'
 
 export default ({ title }) => {
   return (
@@ -11,12 +11,18 @@ export default ({ title }) => {
         display: 'flex',
         alignItems: 'center',
         boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)',
-        variant: 'styles.header',
       }}>
       <div sx={{ mx: 'auto' }} />
       <Link to='/'
         sx={{
-          variant: 'styles.navLink'
+          fontSize: 24,
+          fontFamily: 'heading',
+          color: 'primary',
+          textDecoration: 'none',
+          ":hover": {
+            color: "primaryHover"
+          },
+          padding: '0.2rem'
         }}>
         <Brand title={title} />
       </Link>

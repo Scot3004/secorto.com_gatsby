@@ -10,12 +10,12 @@ export default merge(typography, {
   sizes: {
     container: 1280,
     sidebar: 280,
-    sidebarBreakpoint: 800
+    sidebarBreakpoint: 830
   },
   styles,
   prism,
   navlink:  {
-    fontSize: 128,
+    fontSize: 28,
     fontFamily: 'heading',
     fontWeight: 'heading',
     color: 'primary',

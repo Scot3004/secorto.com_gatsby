@@ -5,18 +5,18 @@ import Helmet from 'react-helmet'
 import Header from './header'
 import Sidebar from './sidebar'
 import BurgerButton from './burger-button'
-import useWindowDimensions from '../hooks/useWindowDimensions'
+//import useWindowDimensions from '../hooks/useWindowDimensions'
 import useBlogThemeConfig from '../hooks/configOptions'
-import {useThemeUI} from 'theme-ui'
+//import {useThemeUI} from 'theme-ui'
 
 
 
 export default ({ children, ...props }) => {
   const blogThemeConfig = useBlogThemeConfig()
   const { webfontURL } = blogThemeConfig
-  const { theme } = useThemeUI()
-  const { width } = useWindowDimensions();
-  const [open, setOpen] = React.useState(width>theme.sizes.sidebarBreakpoint);
+  //const { theme } = useThemeUI()
+  //const { width } = useWindowDimensions();
+  const [open, setOpen] = React.useState(false);
   
 
   return (
@@ -29,7 +29,7 @@ export default ({ children, ...props }) => {
 
       <div
           css={css({
-            ml: open? (theme=>theme.sizes.sidebar): 0,
+            ml: [0, 0, open? (theme=>theme.sizes.sidebar): 0],
             transition: 'margin-left 0.3s ease-in-out;'
           })}
         >
