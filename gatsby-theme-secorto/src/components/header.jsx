@@ -3,7 +3,6 @@ import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 
 import Brand from './brand'
-import Menu from './menu'
 
 export default ({ title }) => {
   return (
@@ -14,6 +13,7 @@ export default ({ title }) => {
         boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)',
         variant: 'styles.header',
       }}>
+      <div sx={{ mx: 'auto' }} />
       <Link to='/'
         sx={{
           variant: 'styles.navLink'
@@ -21,7 +21,6 @@ export default ({ title }) => {
         <Brand title={title} />
       </Link>
       <div sx={{ mx: 'auto' }} />
-      <Menu />
     </header>
   );
 };

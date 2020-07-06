@@ -9,6 +9,8 @@ export default merge(typography, {
   colors,
   sizes: {
     container: 1280,
+    sidebar: 280,
+    sidebarBreakpoint: 800
   },
   styles,
   prism,

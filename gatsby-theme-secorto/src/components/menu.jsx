@@ -1,29 +1,42 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui'
-import { Link } from 'gatsby'
+import styled from '@emotion/styled'
 
-import ColorModeSwitch from './color-mode-switch'
+const StyledMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: ${props => props.theme.colors.primary};
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
 
-export default () => (
-  <div sx={{
-    display: 'flex',
-    alignItems: 'center'
-  }}>
-    <Link to='/blog'
-      sx={{
-        variant: 'styles.navLink'
-      }}>
-      Blog
-    </Link>
-    <Link to='/portafolio'
-      sx={{
-        variant: 'styles.navLink'
-      }}>
-      Portafolio
-    </Link>
-    <ColorModeSwitch sx={{
-      mr: 2
-    }}
-  />
-  </div>
-)
+  @media (min-width: ${props => props.theme.sizes.sidebarBreakpoint}px) {
+    width: ${props => props.theme.sizes.sidebar}px
+  }
+
+  a {
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: ${props => props.theme.colors.background};
+    font-family: ${props => props.theme.fonts.heading}; 
+    text-decoration: none;
+    transition: color 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+    }
+  }
+`
+
+export default StyledMenu
