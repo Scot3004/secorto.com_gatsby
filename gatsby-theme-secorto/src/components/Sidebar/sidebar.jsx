@@ -4,8 +4,8 @@ import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 import {FcFaq, FcBriefcase} from 'react-icons/fc'
 
-import Brand from './brand/sidebar'
-import ColorModeSwitch from './color-mode-switch'
+import Brand from './brand'
+import ColorModeSwitch from '../ui/color-mode-switch'
 import StyledMenu from './menu'
 
 const Menu = ({ open }) => {

@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 
-import Logo from './logo.svg'
+import Logo from '../../assets/logo.svg'
 
 export default () => (
   <div>

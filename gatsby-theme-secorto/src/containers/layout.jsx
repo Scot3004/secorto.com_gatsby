@@ -2,23 +2,17 @@ import React from 'react'
 import { css, Styled } from 'theme-ui'
 import Helmet from 'react-helmet'
 
-import Header from './header'
-import Sidebar from './sidebar'
-import BurgerButton from './burger-button'
-//import useWindowDimensions from '../hooks/useWindowDimensions'
+import Header from '../components/Header/header'
+import Sidebar from '../components/Sidebar/sidebar'
+import BurgerButton from '../components/Sidebar/burger-button'
 import useBlogThemeConfig from '../hooks/configOptions'
-//import {useThemeUI} from 'theme-ui'
 
 
 
 export default ({ children, ...props }) => {
   const blogThemeConfig = useBlogThemeConfig()
   const { webfontURL } = blogThemeConfig
-  //const { theme } = useThemeUI()
-  //const { width } = useWindowDimensions();
   const [open, setOpen] = React.useState(false);
-  
-
   return (
     <Styled.root>
       <Helmet>

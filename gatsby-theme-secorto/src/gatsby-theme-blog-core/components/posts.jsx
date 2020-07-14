@@ -1,5 +1,5 @@
 import React from "react"
-import Posts from "../../components/blog-posts"
+import Posts from "../../containers/blog-posts"
 
 export default ({ location, data }) => {
   const { site, allBlogPost } = data

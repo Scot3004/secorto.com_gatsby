@@ -1,5 +1,5 @@
 import React from "react"
-import PostList from "../../../components/portfolio-list"
+import PostList from "../../../containers/portfolio-list"
 
 export default ({location, data}) => {
   const { 

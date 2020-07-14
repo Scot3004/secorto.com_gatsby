@@ -4,7 +4,7 @@ import { Flex, css } from 'theme-ui'
 
 import Layout from "./layout"
 import SEO from "./seo"
-import PortfolioLink from "./portfolio-link"
+import PortfolioLink from "../components/Portfolio/portfolio-link"
 
 export default ({ location, posts, title }) => {
   return (

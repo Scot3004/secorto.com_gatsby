@@ -1,13 +1,8 @@
 import React from "react"
 
-import { MDXRenderer } from "gatsby-plugin-mdx"
-
 import Layout from "./layout"
 import SEO from "./seo"
-import PostTitle from "./post-title"
-import PostDate from "./post-date"
-import PostFooter from "./post-footer"
-import PostHero from "./post-hero"
+import BlogPost from "../components/Blog/blog-post"
 
 const Post = ({
   data: {
@@ -32,13 +27,7 @@ const Post = ({
       keywords={post.keywords}
       imageAlt={post.imageAlt}
     />
-    <main>
-      <PostHero post={post} />
-      <PostTitle>{post.title}</PostTitle>
-      <PostDate>{post.date}</PostDate>
-      <MDXRenderer>{post.body}</MDXRenderer>
-    </main>
-    <PostFooter {...{ previous, next }} />
+    <BlogPost post={post} />
   </Layout>
 )
 

@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 
-import Brand from './brand/header'
+import Brand from './brand'
 
 export default ({ title }) => {
   return (

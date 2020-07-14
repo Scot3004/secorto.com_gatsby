@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-import Logo from './logo.svg'
+import Logo from '../../assets/logo.svg'
 
 export default () => (
   <div
