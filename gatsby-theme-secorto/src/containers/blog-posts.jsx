@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "./layout"
 import SEO from "./seo"
-import Footer from "./page-footer"
-import PostList from "./blog-list"
+import Footer from "../components/ui/page-footer"
+import PostList from "../components/Blog/blog-list"
 
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
   <Layout location={location} title={siteTitle}>

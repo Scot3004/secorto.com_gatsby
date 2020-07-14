@@ -1,13 +1,7 @@
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Styled } from "theme-ui"
-
 import Layout from "./layout"
 import SEO from "./seo"
-import PostTitle from "./post-title"
-import PostFooter from "./post-footer"
-import PostHero from "./post-hero"
-import Gallery from "./gallery"
+import PortfolioPost from "../components/Portfolio/portfolio-post"
 
 const Post = ({
   data: {
@@ -32,15 +26,7 @@ const Post = ({
       keywords={post.keywords}
       imageAlt={post.imageAlt}
     />
-    <main>
-      <PostHero post={post} />
-      <PostTitle>{post.title}</PostTitle>
-      <Styled.p>Rol: {post.role}</Styled.p>
-      <Styled.p>Responsabilidades: {post.responsibilities}</Styled.p>
-      <MDXRenderer>{post.body}</MDXRenderer>
-      <Gallery items={post.gallery}/>
-    </main>
-    <PostFooter {...{ previous, next }} />
+    <PortfolioPost post={post} />
   </Layout>
 )
 

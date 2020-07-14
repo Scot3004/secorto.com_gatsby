@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css, Styled, Flex } from "theme-ui"
+import Bio from './bio'
 
-import Bio from "./bio"
-
-const Footer = ({ previous, next }) => (
+const Footer = ({ previous, next, Bio }) => (
   <footer
     css={css({
       mt: 4,

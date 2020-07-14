@@ -33,6 +33,10 @@ export default {
     namespace: `#b2ccd6`,
     highlight: `hsla(207, 95%, 15%, 1)`,
   },
+  sidebar: {
+    background: '#004f53',
+    color: white
+  },
   modes: {
     dark: {
       text: lightWhite,

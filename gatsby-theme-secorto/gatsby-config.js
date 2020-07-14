@@ -1,5 +1,4 @@
 module.exports = options => {
-  let {disableThemeUiStyling = false} = options
   let {portfolio = {
     basePath: '/portafolio'
   } } = options
@@ -24,7 +23,7 @@ module.exports = options => {
         options: {
           extensions: [`.mdx`, `.md`],
           defaultLayouts: {
-            default: require.resolve("./src/components/default-page-layout.jsx"),
+            default: require.resolve("./src/containers/default-page-layout.jsx"),
           },
           gatsbyRemarkPlugins: [
             {
@@ -48,7 +47,7 @@ module.exports = options => {
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-twitter`,
       `gatsby-plugin-emotion`,
-      !disableThemeUiStyling && {
+      {
         resolve: `gatsby-plugin-theme-ui`,
       }
     ].filter(Boolean)
