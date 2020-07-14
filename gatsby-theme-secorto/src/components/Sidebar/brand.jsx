@@ -4,9 +4,10 @@ import { Link } from 'gatsby'
 
 import Logo from '../../assets/logo.svg'
 
-export default () => (
+export default ({setOpen}) => (
   <div>
       <Link to='/'
+        onClick={setOpen}
         sx={{
           variant: 'styles.navLink',
           display: 'flex',

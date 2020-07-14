@@ -8,7 +8,7 @@ import Brand from './brand'
 import ColorModeSwitch from '../ui/color-mode-switch'
 import StyledMenu from './menu'
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <div
@@ -19,17 +19,21 @@ const Menu = ({ open }) => {
           flexDirection: 'column'
         }}
       >
-        <Brand />
+        <Brand setOpen={setOpen}/>
         <Link to='/blog'
           sx={{
             variant: 'styles.navLink'
-          }}>
+          }}
+          onClick={setOpen}
+          >
           <FcFaq sx={{mr: '.4rem'}}/>Blog
         </Link>
         <Link to='/portafolio'
           sx={{
             variant: 'styles.navLink',
-          }}>
+          }}
+          onClick={setOpen}
+          >
           <FcBriefcase sx={{mr: '.4rem'}} />Portafolio
         </Link>
         <ColorModeSwitch sx={{
