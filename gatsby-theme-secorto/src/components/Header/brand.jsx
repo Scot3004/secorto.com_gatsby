@@ -9,11 +9,10 @@ export default () => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: 0
-    }}>
-    <img
-      src={Logo} alt="logo" 
-      sx={{width: [32, 36]}}></img>
-    <span sx={{ml: 2, fontSize: [32]}}>SeCOrTo</span>
+      padding: 0,
+    }}
+  >
+    <img src={Logo} alt="logo" sx={{ width: [32, 36] }}></img>
+    <span sx={{ ml: 2, fontSize: [32] }}>SeCOrTo</span>
   </div>
 )

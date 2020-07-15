@@ -1,5 +1,5 @@
-import React from "react"
-import Post from "../../containers/blog-post"
+import React from 'react'
+import Post from '../../containers/blog-post'
 
 export default ({ location, data }) => {
   const { blogPost, previous, next } = data

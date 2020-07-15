@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import { useColorMode } from "theme-ui"
-import Switch from "./switch"
-import sun from "../../assets/sun.png"
-import moon from "../../assets/moon.png"
+import { useColorMode } from 'theme-ui'
+import Switch from './switch'
+import sun from '../../assets/sun.png'
+import moon from '../../assets/moon.png'
 
 const iconCss = [{ pointerEvents: `none`, margin: 4 }]
 
@@ -32,18 +32,19 @@ const uncheckedIcon = (
 export default (props) => {
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
-  const toggleColorMode = e => {
+  const toggleColorMode = (e) => {
     setColorMode(isDark ? `light` : `dark`)
   }
 
   return (
-    <Switch {...props}
-        aria-label="Toggle dark mode"
-        aria-checked={isDark}
-        checkedIcon={checkedIcon}
-        uncheckedIcon={uncheckedIcon}
-        checked={isDark}
-        onChange={toggleColorMode}
+    <Switch
+      {...props}
+      aria-label="Toggle dark mode"
+      aria-checked={isDark}
+      checkedIcon={checkedIcon}
+      uncheckedIcon={uncheckedIcon}
+      checked={isDark}
+      onChange={toggleColorMode}
     />
   )
 }

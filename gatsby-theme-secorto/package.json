@@ -12,6 +12,7 @@
     "@scot3004/gatsby-theme-portfolio-core": "*",
     "gatsby": "^2.23.6",
     "gatsby-plugin-mdx": "^1.2.16",
+    "prettier": "2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const defaultState = {
   open: false,
@@ -8,8 +8,7 @@ const defaultState = {
 
 const SidebarContext = React.createContext(defaultState)
 
-const isMobile = () =>
-  window.matchMedia("(max-width: 800px)").matches === true
+const isMobile = () => window.matchMedia('(max-width: 800px)').matches === true
 
 class SidebarProvider extends React.Component {
   state = {
@@ -18,23 +17,23 @@ class SidebarProvider extends React.Component {
 
   toggleOpen = () => {
     let open = !this.state.open
-    localStorage.setItem("sidebarOpen", JSON.stringify(open))
+    localStorage.setItem('sidebarOpen', JSON.stringify(open))
     this.setState({ open })
   }
 
   closeOnMobile = () => {
-    const lsOpen = JSON.parse(localStorage.getItem("sidebarOpen"))
-    if(isMobile()){
-      console.log("less than 800 px sidebar closed")
-      this.setState({open: false})
-    }else {
+    const lsOpen = JSON.parse(localStorage.getItem('sidebarOpen'))
+    if (isMobile()) {
+      console.log('less than 800 px sidebar closed')
+      this.setState({ open: false })
+    } else {
       console.log(`more than 800 px sidebar maybe open ${lsOpen}`)
       this.setState({ open: lsOpen })
     }
   }
 
   componentDidMount() {
-    this.closeOnMobile()    
+    this.closeOnMobile()
   }
 
   render() {

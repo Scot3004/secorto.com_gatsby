@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "./layout"
-import SEO from "./seo"
-import PortfolioPost from "../components/Portfolio/portfolio-post"
+import React from 'react'
+import Layout from './layout'
+import SEO from './seo'
+import PortfolioPost from '../components/Portfolio/portfolio-post'
 
 const Post = ({
   data: {

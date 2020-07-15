@@ -45,7 +45,6 @@
 This directory contains the data models for the portfolio of gatsby-theme-secorto
 for details about how to use it please read the [readme](gatsby-theme-portfolio-core/README.md)
 
-
 ### `gatsby-theme-secorto`
 
 This directory contains the main theme that is used by the example and my website you can read the instructions in the [readme file](gatsby-theme-secorto/README.md), please consider to see example

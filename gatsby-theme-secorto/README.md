@@ -17,7 +17,7 @@ here for educational purposes.
 module.exports = {
   plugins: [
     {
-      resolve: "@scot3004/gatsby-theme-secorto",
+      resolve: '@scot3004/gatsby-theme-secorto',
       options: {},
     },
   ],
@@ -35,7 +35,7 @@ resources error. Create a simple page in `src/pages/index.js` to see a
 page on the root url.
 
 ```jsx
-import React from "react"
+import React from 'react'
 
 export default function Home() {
   return <div>My Site!</div>

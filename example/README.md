@@ -4,6 +4,7 @@ This site uses the theme gatsby-theme-secorto the same that im using to build my
 
 The folders that you will get are
 
+```text
 .
 ├── content               // All your content goes here
 │   ├── assets            // Images for posts and portfolio, you can call them by ../assets in your mdx
@@ -16,3 +17,4 @@ The folders that you will get are
     └── pages             // demo pages
         ├── index.mdx     // index page it could be mdx, js, jsx and so on
         └── 404.mdx       // example 404 (not found) page used where the page requested is not valid
+```

@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby'
 
 const useBlogThemeConfig = () => {
   const data = useStaticQuery(graphql`

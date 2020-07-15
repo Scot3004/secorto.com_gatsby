@@ -14,8 +14,8 @@ Desarrollar un sitio web informativo que demuestre los conocimientos y habilidad
 
 ### Objetivos específicos
 
--   Página de presentación como desarrollador
--   Desarrollar blog de las cosas aprendidas
+- Página de presentación como desarrollador
+- Desarrollar blog de las cosas aprendidas
 
 ## Scripts Incluidos
 
@@ -36,20 +36,21 @@ yarn start
 Este blog ha sido posible gracias a una serie de herramientas y utilitarios que han facilitado la labor de su desarrollo
 
 ### Tecnologias
--   [Yarn](https://yarnpkg.com/)
--   [NPM](https://www.npmjs.com/)
--   [GIT](https://git-scm.com)
--   [Gatsby](https://www.gatsbyjs.org/)
+
+- [Yarn](https://yarnpkg.com/)
+- [NPM](https://www.npmjs.com/)
+- [GIT](https://git-scm.com)
+- [Gatsby](https://www.gatsbyjs.org/)
 
 ### Servidores
 
--   [Github](https://github.com)
--   [Netlify](https://www.netlify.com/)
+- [Github](https://github.com)
+- [Netlify](https://www.netlify.com/)
 
 ### Linters
 
--   [ESLint](http://eslint.org/)
+- [ESLint](http://eslint.org/)
 
 ## Copyright and Licenses
 
-Copyright 2020 Scot3004. Code released under the [MIT](LICENSE) 
+Copyright 2020 Scot3004. Code released under the [MIT](LICENSE)

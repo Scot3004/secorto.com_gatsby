@@ -35,7 +35,7 @@ export default {
   },
   sidebar: {
     background: '#004f53',
-    color: white
+    color: white,
   },
   modes: {
     dark: {

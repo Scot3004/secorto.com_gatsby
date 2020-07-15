@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import { css, Styled, Flex } from "theme-ui"
+import React from 'react'
+import { Link } from 'gatsby'
+import { css, Styled, Flex } from 'theme-ui'
 import Bio from './bio'
 
 const Footer = ({ previous, next, Bio }) => (

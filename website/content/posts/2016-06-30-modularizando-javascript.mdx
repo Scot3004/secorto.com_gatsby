@@ -17,17 +17,17 @@ CommonJS
 : La usada en este blog, CommonJS una implementación usada por NodeJS para la importación de módulos usando la palabra reservada require.
 
 ```javascript
-var $ = require('jquery');
-exports.myExample = function () {};
+var $ = require('jquery')
+exports.myExample = function () {}
 ```
 
 AMD
 : Se usa cuando se requiere tener paquetes asíncronos ya que commonJS a pesar de ser mas sencilla tiene el inconveniente que los módulos se importan de forma Sincrónica.
 
 ```javascript
-define(['jquery'] , function ($) {
-    return function () {};
-});
+define(['jquery'], function ($) {
+  return function () {}
+})
 ```
 
 ## ES6
@@ -36,18 +36,18 @@ Ya está implementada de forma nativa
 
 ```javascript
 //------ lib.js ------
-export const sqrt = Math.sqrt;
+export const sqrt = Math.sqrt
 export function square(x) {
-    return x * x;
+  return x * x
 }
 export function diag(x, y) {
-    return sqrt(square(x) + square(y));
+  return sqrt(square(x) + square(y))
 }
 
 //------ main.js ------
-import { square, diag } from 'lib';
-console.log(square(11)); // 121
-console.log(diag(4, 3)); // 5
+import { square, diag } from 'lib'
+console.log(square(11)) // 121
+console.log(diag(4, 3)) // 5
 ```
 
 [②ality – JavaScript and more](http://www.2ality.com/2014/09/es6-modules-final.html)

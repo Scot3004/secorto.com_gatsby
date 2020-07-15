@@ -1,6 +1,6 @@
 export default {
   root: {
-    fontFamily: `body`
+    fontFamily: `body`,
   },
   pre: {
     variant: `prism`,
@@ -31,9 +31,9 @@ export default {
   // from typography overrideThemeStyles
   a: {
     color: `primary`,
-    ":hover": {
-      color: `primaryHover`
-    }
+    ':hover': {
+      color: `primaryHover`,
+    },
   },
   hr: {
     borderColor: `muted`,
@@ -42,7 +42,7 @@ export default {
     code: {
       fontSize: `inherit`,
     },
-    textAlign: `justify`
+    textAlign: `justify`,
   },
   li: {
     code: {
@@ -53,18 +53,18 @@ export default {
     color: `inherit`,
     borderLeftColor: `inherit`,
     opacity: 0.8,
-    "&.translation": {
+    '&.translation': {
       fontSize: `1em`,
     },
   },
-  navLink:  {
+  navLink: {
     fontSize: 24,
     fontFamily: 'heading',
     color: 'primary',
     p: [1, 2],
     textDecoration: 'none',
-    ":hover": {
-      color: "primaryHover"
-    }
+    ':hover': {
+      color: 'primaryHover',
+    },
   },
 }

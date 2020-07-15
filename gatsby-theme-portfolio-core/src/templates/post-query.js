@@ -1,5 +1,5 @@
-import { graphql } from "gatsby"
-import PostPage from "../components/post"
+import { graphql } from 'gatsby'
+import PostPage from '../components/post'
 
 export default PostPage
 

@@ -1,9 +1,9 @@
 ---
 title: Uso de jquery con ajax
 tags:
-- tutorial
-- jquery
-- html
+  - tutorial
+  - jquery
+  - html
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-2111565777799621636
 blogger_orig_url: http://scot3004.blogspot.com/2011/07/uso-de-jquery-con-ajax.html
 category: dev
@@ -16,19 +16,19 @@ claro no aspiren que sea eficiente
 Para cargar una pagina y un script
 
 ```javascript
-function contenido(pagina){
-  $('#content').load(pagina+".html");
+function contenido(pagina) {
+  $('#content').load(pagina + '.html')
   //cargar una pagina dada en un div cuyo id sea content
-  $.getScript(pagina+".js"); //cargar un script
+  $.getScript(pagina + '.js') //cargar un script
 }
 ```
 
 Para cargar un date query en el main
 
 ```javascript
-$(document).ready(function(){
-  $( "#datepicker" ).datepicker();
-});
+$(document).ready(function () {
+  $('#datepicker').datepicker()
+})
 ```
 
 Usado en el documento externo

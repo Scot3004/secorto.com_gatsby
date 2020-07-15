@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const StyledBurger = styled.button`
   position: fixed;
-  top: .6rem;
+  top: 0.6rem;
   left: 1rem;
   display: flex;
   flex-direction: column;
@@ -23,23 +23,26 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => open ? (props=> props.theme.colors.sidebar.color) : (props=> props.theme.colors.primary)};
+    background: ${({ open }) =>
+      open
+        ? (props) => props.theme.colors.sidebar.color
+        : (props) => props.theme.colors.primary};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
 
     :first-of-type {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     :nth-of-type(2) {
-      opacity: ${({ open }) => open ? '0' : '1'};
-      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+      opacity: ${({ open }) => (open ? '0' : '1')};
+      transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
     }
 
     :nth-of-type(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `

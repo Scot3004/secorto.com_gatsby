@@ -2,12 +2,14 @@ const fs = require(`fs`)
 const path = require(`path`)
 const mkdirp = require(`mkdirp`)
 const Debug = require(`debug`)
-const { createFilePath, createRemoteFileNode } = require(`gatsby-source-filesystem`)
+const {
+  createFilePath,
+  createRemoteFileNode,
+} = require(`gatsby-source-filesystem`)
 const { urlResolve, createContentDigest, slash } = require(`gatsby-core-utils`)
 
 const debug = Debug(`@scot3004/gatsby-theme-portfolio-core`)
 const withDefaults = require(`./utils/default-options`)
-
 
 // Ensure that content directories exist at site-level
 exports.onPreBootstrap = ({ store }, themeOptions) => {
@@ -19,7 +21,7 @@ exports.onPreBootstrap = ({ store }, themeOptions) => {
     path.join(program.directory, assetPath),
   ]
 
-  dirs.forEach(dir => {
+  dirs.forEach((dir) => {
     debug(`Initializing ${dir} directory`)
     if (!fs.existsSync(dir)) {
       mkdirp.sync(dir)
@@ -27,7 +29,7 @@ exports.onPreBootstrap = ({ store }, themeOptions) => {
   })
 }
 
-const mdxResolverPassthrough = fieldName => async (
+const mdxResolverPassthrough = (fieldName) => async (
   source,
   args,
   context,
@@ -45,7 +47,7 @@ const mdxResolverPassthrough = fieldName => async (
 }
 
 exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
-  const {excerptLength} = withDefaults(themeOptions)
+  const { excerptLength } = withDefaults(themeOptions)
   const { createTypes } = actions
 
   createTypes(`type PortfolioGalleryItem implements Node {
@@ -98,7 +100,7 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
             if (source.image___NODE) {
               return context.nodeModel.getNodeById({ id: source.image___NODE })
             } else if (source.image) {
-              return processRelativeImage(source, context, source["image"])
+              return processRelativeImage(source, context, source['image'])
             }
           },
         },
@@ -109,9 +111,15 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
           type: 'File',
           resolve: async (source, args, context, info) => {
             if (source.socialImage___NODE) {
-              return context.nodeModel.getNodeById({ id: source.socialImage___NODE })
+              return context.nodeModel.getNodeById({
+                id: source.socialImage___NODE,
+              })
             } else if (source.socialImage) {
-              return processRelativeImage(source, context, source["socialImage"])
+              return processRelativeImage(
+                source,
+                context,
+                source['socialImage']
+              )
             }
           },
         },
@@ -127,7 +135,7 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
             return source.gallery.map((item) => {
               return {
                 alt: item.alt,
-                image: processRelativeImage(source, context, item.image)
+                image: processRelativeImage(source, context, item.image),
               }
             })
           },
@@ -136,7 +144,7 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
       interfaces: [`Node`, `PortfolioPost`],
       extensions: {
         infer: false,
-      }
+      },
     })
   )
 }
@@ -145,14 +153,12 @@ function processRelativeImage(source, context, strPath) {
   // Image is a relative path - find a corresponding file
   const mdxFileNode = context.nodeModel.findRootNodeAncestor(
     source,
-    node => node.internal && node.internal.type === `File`
+    (node) => node.internal && node.internal.type === `File`
   )
   if (!mdxFileNode) {
     return
   }
-  const imagePath = slash(
-    path.join(mdxFileNode.dir, strPath)
-  )
+  const imagePath = slash(path.join(mdxFileNode.dir, strPath))
 
   const fileNodes = context.nodeModel.getAllNodes({ type: `File` })
   for (let file of fileNodes) {
@@ -174,9 +180,7 @@ function validURL(str) {
 // Create fields for post slugs and source
 // This will change with schema customization with work
 exports.onCreateNode = async (
-  { node, actions, getNode, createNodeId,
-    store,
-    cache},
+  { node, actions, getNode, createNodeId, store, cache },
   themeOptions
 ) => {
   const { createNode, createParentChildLink } = actions
@@ -223,38 +227,40 @@ exports.onCreateNode = async (
       socialImage: node.frontmatter.socialImage,
       role: node.frontmatter.role,
       responsibilities: node.frontmatter.responsibilities,
-      gallery: node.frontmatter.gallery
+      gallery: node.frontmatter.gallery,
     }
 
-    if (validURL(node.frontmatter.image)) { // create a file node for image URLs
+    if (validURL(node.frontmatter.image)) {
+      // create a file node for image URLs
       const remoteFileNode = await createRemoteFileNode({
         url: node.frontmatter.image,
         parentNodeId: node.id,
         createNode,
         createNodeId,
         cache,
-        store
+        store,
       })
       // if the file was created, attach the new node to the parent node
       if (remoteFileNode) {
         fieldData.image___NODE = remoteFileNode.id
       }
-    } 
+    }
 
-    if (validURL(node.frontmatter.socialImage)) { // create a file node for image URLs
+    if (validURL(node.frontmatter.socialImage)) {
+      // create a file node for image URLs
       const remoteFileNode = await createRemoteFileNode({
         url: node.frontmatter.socialImage,
         parentNodeId: node.id,
         createNode,
         createNodeId,
         cache,
-        store
+        store,
       })
       // if the file was created, attach the new node to the parent node
       if (remoteFileNode) {
         fieldData.socialImage___NODE = remoteFileNode.id
       }
-    } 
+    }
 
     const mdxPortfolioPostId = createNodeId(`${node.id} >>> MdxPortfolioPost`)
     await createNode({

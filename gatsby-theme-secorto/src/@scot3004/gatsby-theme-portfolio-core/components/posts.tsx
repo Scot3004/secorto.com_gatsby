@@ -1,12 +1,12 @@
-import React from "react"
-import PostList from "../../../containers/portfolio-list"
+import React from 'react'
+import PostList from '../../../containers/portfolio-list'
 
-export default ({location, data}) => {
-  const { 
-    allPortfolioPost, 
+export default ({ location, data }) => {
+  const {
+    allPortfolioPost,
     site: {
-      siteMetadata: {title}
-    }
+      siteMetadata: { title },
+    },
   } = data
   return (
     <PostList

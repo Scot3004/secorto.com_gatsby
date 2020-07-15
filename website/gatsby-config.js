@@ -9,27 +9,29 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "SeCOrTo",
-        short_name: "SeCOrTo",
-        start_url: "/",
-        background_color: "#699ea0",
-        theme_color: "#699ea0",
+        name: 'SeCOrTo',
+        short_name: 'SeCOrTo',
+        start_url: '/',
+        background_color: '#699ea0',
+        theme_color: '#699ea0',
         // Enables "Add to HomeScreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: "standalone",
-        icon: "content/img/logo.png", // This path is relative to the root of the site.
+        display: 'standalone',
+        icon: 'content/img/logo.png', // This path is relative to the root of the site.
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
         crossOrigin: `use-credentials`,
       },
     },
-    { resolve: `@scot3004/gatsby-theme-secorto`, 
+    {
+      resolve: `@scot3004/gatsby-theme-secorto`,
       options: {
         portfolio: {
           basePath: `/portafolio`,
         },
-        webfontURL: 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'
+        webfontURL:
+          'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap',
       },
     },
     {
@@ -56,17 +58,17 @@ module.exports = {
       {
         name: `GitHub`,
         url: `https://github.com/scot3004`,
-      }
+      },
     ],
     menuLinks: [
       {
-        name: "Blog",
-        link: "/blog"
+        name: 'Blog',
+        link: '/blog',
       },
       {
-        name: "Portafolio",
-        link: "/portafolio"
-      }
-    ]
+        name: 'Portafolio',
+        link: '/portafolio',
+      },
+    ],
   },
 }
