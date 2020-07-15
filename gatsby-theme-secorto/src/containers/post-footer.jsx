@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { css, Styled, Flex } from 'theme-ui'
 import Bio from './bio'
 
-const Footer = ({ previous, next, Bio }) => (
+const Footer = ({ previous, next }) => (
   <footer
     css={css({
       mt: 4,

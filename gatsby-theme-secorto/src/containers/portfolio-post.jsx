@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from './layout'
 import SEO from './seo'
 import PortfolioPost from '../components/Portfolio/portfolio-post'
+import PostFooter from './post-footer'
 
 const Post = ({
   data: {
@@ -27,6 +28,7 @@ const Post = ({
       imageAlt={post.imageAlt}
     />
     <PortfolioPost post={post} />
+    <PostFooter {...{ previous, next }} />
   </Layout>
 )
 

@@ -4,7 +4,11 @@ import PostPage from '../components/post'
 export default PostPage
 
 export const query = graphql`
-  query PortfolioPageQuery($id: String!, $previousId: String, $nextId: String) {
+  query PortfolioPageQuery(
+    $id: String!,
+    $previousId: String,
+    $nextId: String
+    ) {
     site {
       siteMetadata {
         title
