@@ -44,6 +44,7 @@ const Menu = ({ open, setOpen }) => {
           sx={{
             margin: '1rem auto',
           }}
+          afterToggle={setOpen}
         />
       </div>
     </StyledMenu>

@@ -24,10 +24,8 @@ class SidebarProvider extends React.Component {
   closeOnMobile = () => {
     const lsOpen = JSON.parse(localStorage.getItem('sidebarOpen'))
     if (isMobile()) {
-      console.log('less than 800 px sidebar closed')
       this.setState({ open: false })
     } else {
-      console.log(`more than 800 px sidebar maybe open ${lsOpen}`)
       this.setState({ open: lsOpen })
     }
   }
