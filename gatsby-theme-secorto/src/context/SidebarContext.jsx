@@ -32,6 +32,9 @@ class SidebarProvider extends React.Component {
 
   componentDidMount() {
     this.closeOnMobile()
+    window.onpopstate = ()=> {
+      this.closeOnMobile()
+    }
   }
 
   render() {
