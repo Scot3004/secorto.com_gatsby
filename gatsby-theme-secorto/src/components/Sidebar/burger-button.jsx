@@ -47,13 +47,30 @@ const StyledBurger = styled.button`
   }
 `
 
+const StyledBackground = styled.div`
+&::before {
+  content: "";
+  top: 0.15rem;
+  left: 0.5rem;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background: ${(props) => props.theme.colors.background};
+  z-index: 99;
+  border-radius: 10px;
+}
+`
+
 const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
+    <>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+      <StyledBackground></StyledBackground>
+    </>
   )
 }
 
