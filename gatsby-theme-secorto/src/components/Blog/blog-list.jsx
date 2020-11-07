@@ -10,7 +10,7 @@ const PostList = ({ posts }) => (
       justifyContent: 'space-between',
     })}
   >
-    {posts.map(({ node }) => (
+    {posts.map(( node ) => (
       <PostLink key={node.slug} {...node} />
     ))}
   </Flex>
