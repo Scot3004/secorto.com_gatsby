@@ -64,7 +64,7 @@ export default {
     p: [1, 2],
     textDecoration: 'none',
     ':hover': {
-      color: 'primaryHover',
+      color: 'sidebarHover',
     },
   },
 }
