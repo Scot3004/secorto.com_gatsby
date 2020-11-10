@@ -1,6 +1,8 @@
 import React from 'react'
 import { css, Styled } from 'theme-ui'
 import Helmet from 'react-helmet'
+import { SkipNavLink, SkipNavContent } from "@reach/skip-nav"
+import "@reach/skip-nav/styles.css"
 
 import Header from '../components/Header/header'
 import Sidebar from '../components/Sidebar/sidebar'
@@ -18,6 +20,7 @@ export default ({ children, ...props }) => {
           <Helmet>
             <link rel="stylesheet" href={webfontURL} />
           </Helmet>
+          <SkipNavLink />
           <BurgerButton
             open={sidebarOptions.open}
             setOpen={sidebarOptions.toggleOpen}
@@ -37,6 +40,7 @@ export default ({ children, ...props }) => {
             })}
           >
             <Header {...props} />
+            <SkipNavContent />
             <div
               css={css({
                 maxWidth: `container`,

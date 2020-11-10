@@ -64,7 +64,7 @@ const StyledBackground = styled.div`
 const Burger = ({ open, setOpen }) => {
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger open={open} onClick={() => setOpen(!open)} aria-label="Toggle sidebar">
         <div />
         <div />
         <div />

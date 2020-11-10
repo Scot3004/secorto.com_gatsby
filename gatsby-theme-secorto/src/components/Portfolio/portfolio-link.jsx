@@ -11,7 +11,13 @@ export default ({ slug, image, title }) => (
       flex: ['0 1 100%', '0 1 49%', '0 1 32%'],
     }}
   >
-    <Img sizes={{ ...image.childImageSharp.fluid, aspectRatio: 16 / 9 }}></Img>
+    <Img sizes={{ ...image.childImageSharp.fluid, aspectRatio: 16 / 9 }}
+    sx={{
+      borderTopRightRadius: 6,
+      borderTopLeftRadius: 6,
+      margin: 'auto'
+    }}
+    width="391" height="220"></Img>
     <Text
       sx={{
         color: 'primary',
