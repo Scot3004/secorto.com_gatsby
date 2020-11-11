@@ -5,6 +5,7 @@ import styles from './styles'
 import prism from './prism'
 
 export default merge(typography, {
+  initialColorModeName: 'dark',
   useColorSchemeMediaQuery: true,
   colors,
   sizes: {
