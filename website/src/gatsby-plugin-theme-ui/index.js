@@ -6,6 +6,12 @@ export default merge({}, baseTheme, {
   colors: {
     text: '#222',
     primary: '#004f53',
+    timeline: {
+      workBG: baseTheme.colors.sidebar.background,
+      academicBG: '#993399',
+      previousWorkBG: '#777',
+      iconColor: '#fff'
+    },
     modes: {
       dark: {
         primary: '#699ea0',

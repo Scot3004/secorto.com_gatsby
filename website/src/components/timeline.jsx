@@ -17,10 +17,10 @@ export default ({ data }) => {
       css={css({
         '&::before': {
           background: theme.colors.primary,
-          width: 2,
+          width: 4,
         },
         '.vertical-timeline-element-icon': {
-          boxShadow: '0 2px 40px 0 rgba(0,0,0,0.07)',
+          boxShadow: '0 4px 40px 0 rgba(0,0,0,0.07)',
         },
       })}
     >
@@ -28,7 +28,10 @@ export default ({ data }) => {
         <TimelineElement item={item} key={index} />
       ))}
       <VerticalTimelineElement
-        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+        iconStyle={{
+          background: theme.colors.timeline.previousWorkBG,
+          color: theme.colors.timeline.iconColor
+        }}
         icon={<FaStar />}
       ></VerticalTimelineElement>
     </VerticalTimeline>
