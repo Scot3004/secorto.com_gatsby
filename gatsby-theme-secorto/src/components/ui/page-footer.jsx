@@ -10,9 +10,11 @@ const Footer = ({ socialLinks }) => (
   >
     © {new Date().getFullYear()}, Powered by
     {` `}
-    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>
+    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>, icons by <Styled.a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer" >
+      Font awesome
+    </Styled.a>
     {` `}&bull;{` `}
-    {socialLinks
+    Follow me on: {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
             <Styled.a
@@ -23,9 +25,7 @@ const Footer = ({ socialLinks }) => (
               {platform.name}
             </Styled.a>
             {arr.length - 1 !== i && (
-              <Fragment>
-                {` `}&bull;{` `}
-              </Fragment>
+              <Fragment>, </Fragment>
             )}
           </Fragment>
         ))

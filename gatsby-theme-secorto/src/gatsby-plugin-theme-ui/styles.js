@@ -32,7 +32,7 @@ export default {
   a: {
     color: `primary`,
     ':hover': {
-      color: `primaryHover`,
+      color: `hover`,
     },
   },
   hr: {
@@ -64,7 +64,7 @@ export default {
     p: [1, 2],
     textDecoration: 'none',
     ':hover': {
-      color: 'sidebarHover',
+      color: 'sidebar.hover',
     },
   },
 }

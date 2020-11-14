@@ -14,7 +14,7 @@ export default merge({}, baseTheme, {
     },
     modes: {
       dark: {
-        primary: '#699ea0',
+        primary: '#A2C3C3',
       },
     },
   },

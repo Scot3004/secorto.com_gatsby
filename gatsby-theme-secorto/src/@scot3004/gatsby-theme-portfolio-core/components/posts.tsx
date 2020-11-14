@@ -5,7 +5,7 @@ export default ({ location, data }) => {
   const {
     allPortfolioPost,
     site: {
-      siteMetadata: { title },
+      siteMetadata: { title, social },
     },
   } = data
   return (
@@ -13,6 +13,7 @@ export default ({ location, data }) => {
       title={title}
       location={location}
       posts={allPortfolioPost.edges}
+      socialLinks={social}
     />
   )
 }

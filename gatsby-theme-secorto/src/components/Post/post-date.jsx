@@ -1,15 +1,17 @@
 /** @jsx jsx */
-import { Styled, jsx } from 'theme-ui'
+import { jsx } from 'theme-ui'
+import { FaCalendarAlt } from 'react-icons/fa'
 
-const PostDate = (props) => (
-  <Styled.p
-    sx={{
-      fontSize: 1,
-      mt: -3,
-      mb: 3,
-    }}
+const PostDate = ({ children, ...props}) => (
+  <div
     {...props}
-  />
+  >
+    <small>
+      <FaCalendarAlt sx={{
+        fontSize: 12,
+      }}/> {children}
+    </small>
+  </div>
 )
 
 export default PostDate

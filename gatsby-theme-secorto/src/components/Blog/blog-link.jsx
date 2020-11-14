@@ -2,6 +2,7 @@
 import { Styled, Card, Text, jsx } from 'theme-ui'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import PostDate from '../Post/post-date'
 
 const PostLink = ({ title, slug, date, excerpt, image }) => (
   <Card
@@ -30,13 +31,7 @@ const PostLink = ({ title, slug, date, excerpt, image }) => (
       >
         {title}
       </h2>
-      <small
-        sx={{
-          color: 'text',
-        }}
-      >
-        {date}
-      </small>
+      <PostDate sx={{ color: 'text' }}>{date}</PostDate>
       <Styled.p
         sx={{
           color: 'text',

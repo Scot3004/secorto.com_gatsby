@@ -22,7 +22,7 @@ export default ({ title }) => {
           color: 'primary',
           textDecoration: 'none',
           ':hover': {
-            color: 'primaryHover',
+            color: 'hover',
           },
           padding: '0.2rem',
         }}
