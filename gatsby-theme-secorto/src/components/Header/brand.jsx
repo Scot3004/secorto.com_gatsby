@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-import Logo from '../../assets/logo.svg'
+import HomePage from './homepage-link'
 
-export default () => (
+export default ({title}) => (
   <div
     sx={{
       display: 'flex',
@@ -12,7 +12,7 @@ export default () => (
       padding: 0,
     }}
   >
-    <img src={Logo} alt="logo" sx={{ width: [32, 36] }}></img>
-    <span sx={{ ml: 2, fontSize: [32] }}>SeCOrTo</span>
+    <HomePage />
+    <span sx={{ ml: 2, fontSize: [32], color: 'primary' }}>{title}</span>
   </div>
 )

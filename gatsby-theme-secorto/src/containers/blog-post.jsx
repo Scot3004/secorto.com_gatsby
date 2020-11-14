@@ -4,6 +4,9 @@ import Layout from './layout'
 import SEO from './seo'
 import BlogPost from '../components/Blog/blog-post'
 import PostFooter from './post-footer'
+import HeaderLink from '../components/Header/header-link'
+
+const BlogLink = <HeaderLink to="/blog" >Blog</HeaderLink>
 
 const Post = ({
   data: {
@@ -16,7 +19,7 @@ const Post = ({
   previous,
   next,
 }) => (
-  <Layout location={location} title={title}>
+  <Layout location={location} title={BlogLink}>
     <SEO
       title={post.title}
       description={post.excerpt}

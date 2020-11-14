@@ -3,6 +3,9 @@ import Layout from './layout'
 import SEO from './seo'
 import PortfolioPost from '../components/Portfolio/portfolio-post'
 import PostFooter from './post-footer'
+import HeaderLink from '../components/Header/header-link'
+
+const PortfolioLink = <HeaderLink to="/portafolio" >Portafolio</HeaderLink>
 
 const Post = ({
   data: {
@@ -15,7 +18,7 @@ const Post = ({
   previous,
   next,
 }) => (
-  <Layout location={location} title={title}>
+  <Layout location={location} title={PortfolioLink}>
     <SEO
       title={post.title}
       description={post.excerpt}

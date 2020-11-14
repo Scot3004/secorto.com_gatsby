@@ -6,7 +6,7 @@ import Footer from '../components/ui/page-footer'
 import PostList from '../components/Blog/blog-list'
 
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
-  <Layout location={location} title={siteTitle}>
+  <Layout location={location} title="Blog">
     <SEO title="Blog" />
     <main>
       <PostList posts={posts} />
