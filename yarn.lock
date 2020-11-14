@@ -12225,7 +12225,7 @@ react-use@^15.1.0:
     ts-easing "^0.2.0"
     tslib "^2.0.0"
 
-react-vertical-timeline-component@^3.0.2:
+react-vertical-timeline-component@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.3.1.tgz#d6a28c26c6915dfa99a754c607aa6176b772d46c"
   integrity sha512-ZlxIaPakHb22N2T6IkKILZLDIIEUnSWPlx6NTFyHEKbXMj3P1Co0qDUT57iuHib6UUJGhbdmRp3km3WNZsZw1g==

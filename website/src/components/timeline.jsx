@@ -12,8 +12,10 @@ import { useThemeUI, css } from 'theme-ui'
 
 export default ({ data }) => {
   const { theme } = useThemeUI()
+  const animationsEnabled = window.matchMedia('(prefers-reduced-motion: no-preference)').matches === true
   return (
     <VerticalTimeline
+      animate={animationsEnabled}
       css={css({
         '&::before': {
           background: theme.colors.primary,
