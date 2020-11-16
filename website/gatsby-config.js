@@ -12,8 +12,8 @@ module.exports = {
         name: 'SeCOrTo',
         short_name: 'SeCOrTo',
         start_url: '/',
-        background_color: '#699ea0',
-        theme_color: '#699ea0',
+        background_color: '#004f53',
+        // theme_color: '#004f53',
         // Enables "Add to HomeScreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
@@ -22,6 +22,19 @@ module.exports = {
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
         crossOrigin: `use-credentials`,
+        theme_color_in_head: false,
+        shortcuts: [
+          {
+            name: "Blog",
+            url: "/blog",
+            description: "Blog Posts"
+          },
+          {
+            name: "Portafolio",
+            url: "/portafolio",
+            description: "Posts del portafolio"
+          }
+        ]
       },
     },
     {
