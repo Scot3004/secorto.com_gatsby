@@ -13,13 +13,14 @@ const options = {
 }
 
 export default ({ items }) => (
-  <div sx={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  }}>
-    <SimpleReactLightbox>
-      <SRLWrapper options={options}>
+  <SimpleReactLightbox>
+    <SRLWrapper options={options}>
+      <div sx={{
+        alignItems: "center",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}>
         {items.map((item) => (
           <a
             key={item.alt}
@@ -32,7 +33,7 @@ export default ({ items }) => (
             <img src={item.image.thumbnail.fixed.src} alt={item.alt} />
           </a>
         ))}
-      </SRLWrapper>
-    </SimpleReactLightbox>
-  </div>
+      </div>
+    </SRLWrapper>
+  </SimpleReactLightbox>
 )
