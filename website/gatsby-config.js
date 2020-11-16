@@ -72,6 +72,10 @@ module.exports = {
         name: `GitHub`,
         url: `https://github.com/scot3004`,
       },
+      {
+        name: "LinkedIn",
+        url: `https://linkedin.com/in/scot3004`,
+      }
     ],
     menuLinks: [
       {
