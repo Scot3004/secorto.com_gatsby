@@ -10,9 +10,6 @@ const PortfolioLink = <HeaderLink to="/portafolio" >Portafolio</HeaderLink>
 const Post = ({
   data: {
     portfolioPost: post,
-    site: {
-      siteMetadata: { title },
-    },
   },
   location,
   previous,

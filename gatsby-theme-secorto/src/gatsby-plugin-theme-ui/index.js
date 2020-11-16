@@ -26,7 +26,7 @@ export default merge(typography, {
   cards: {
     primary: {
       borderRadius: 6,
-      boxShadow: (theme) => `0 0 8px  ${theme.colors.text}`,
+      boxShadow: (theme) => `0 0 8px  ${theme.colors.primary}`,
       textDecoration: 'none',
       marginBottom: '1em',
       transition:
@@ -34,6 +34,7 @@ export default merge(typography, {
       transitionDelay: '.1s',
       '&:hover': {
         transform: 'translate(0, -4px)',
+        boxShadow: (theme) => `0 0 8px  ${theme.colors.hover}`,
       },
     },
     compact: {

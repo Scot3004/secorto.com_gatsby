@@ -19,6 +19,7 @@ export default ({ children, ...props }) => {
         <Styled.root>
           <Helmet>
             <link rel="stylesheet" href={webfontURL} />
+            <meta name="viewport" content="width=device-width, minimum-scale=1"></meta>
           </Helmet>
           <SkipNavLink />
           <BurgerButton
