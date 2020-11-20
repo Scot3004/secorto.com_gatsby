@@ -35,7 +35,7 @@ export default {
     highlight: `hsla(207, 95%, 15%, 1)`,
   },
   sidebar: {
-    background: '#004f53',
+    background: purple60,
     color: white,
     hover: lightBlue,
   },
