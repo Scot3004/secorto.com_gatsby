@@ -56,13 +56,13 @@ module.exports = {
   ],
   siteMetadata: {
     title: `SeCOrTo`,
-    // Used to provide alt text for your avatar
     author: `Sergio Orozco Torres`,
-    // Used for SEO
     description: `Sitio web de Sergio Orozco`,
-    // Used for social links in the root footer
     siteUrl: `https://www.secorto.com`,
-    // Used for resolving images in social cards
+    sidebar: {
+      title: "Sergio Carlos Orozco Torres",
+      subtitle: "Software developer"
+    },
     social: [
       {
         name: `Twitter`,

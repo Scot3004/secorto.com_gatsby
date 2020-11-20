@@ -2,14 +2,18 @@ const withDefaults = require(`./utils/default-options`)
 
 module.exports = (themeOptions) => {
   const options = withDefaults(themeOptions)
-  let { mdxOtherwiseConfigured = false } = themeOptions // keep mdx flag so we don't introduce a breaking change
+  let { mdxOtherwiseConfigured = false } = themeOptions
 
   return {
     siteMetadata: {
-      title: `Blog Title Placeholder`,
+      title: `Site Title Placeholder`,
       author: `Name Placeholder`,
       description: `Description placeholder`,
       siteUrl: 'https://example.com',
+      sidebar: {
+        title: "Jhon Doe",
+        subtitle: "My Role"
+      },
       social: [
         {
           name: `Twitter`,

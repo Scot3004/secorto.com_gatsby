@@ -8,12 +8,7 @@ const Footer = ({ socialLinks }) => (
       pt: 3,
     })}
   >
-    © {new Date().getFullYear()}, Powered by
-    {` `}
-    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>, icons by <Styled.a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer" >
-      Font awesome
-    </Styled.a>
-    {` `}&bull;{` `}
+    © {new Date().getFullYear()},
     Follow me on: {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
@@ -30,6 +25,12 @@ const Footer = ({ socialLinks }) => (
           </Fragment>
         ))
       : null}
+{` `}&bull;{` `}
+    Powered by
+    {` `}
+    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>, icons by <Styled.a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer" >
+      Font awesome
+    </Styled.a>
   </footer>
 )
 export default Footer

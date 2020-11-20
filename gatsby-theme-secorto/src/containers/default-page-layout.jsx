@@ -1,29 +1,17 @@
 import React from 'react'
 import BlogLayout from './layout'
 import SEO from './seo'
-import { useStaticQuery, graphql } from 'gatsby'
 import Footer from '../components/ui/page-footer'
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 export default ({ location, children }) => {
-  const { site } = useStaticQuery(graphql`
-    query HeaderQuery {
-      site {
-        siteMetadata {
-          title
-          social {
-            name
-            url
-          }
-        }
-      }
-    }
-  `)
+  const {title, social} = useSiteMetadata()
 
   return (
-    <BlogLayout location={location} title={site.siteMetadata.title}>
-      <SEO title={site.siteMetadata.title} />
+    <BlogLayout location={location} title={ title }>
+      <SEO title={ title } />
       {children}
-      <Footer socialLinks={site.siteMetadata.social }/>
+      <Footer socialLinks={ social }/>
     </BlogLayout>
   )
 }
