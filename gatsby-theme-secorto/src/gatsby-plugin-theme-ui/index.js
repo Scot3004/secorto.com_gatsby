@@ -44,4 +44,7 @@ export default merge(typography, {
       borderColor: 'muted',
     },
   },
+  fonts: {
+    'kalam': 'Kalam'
+  }
 })

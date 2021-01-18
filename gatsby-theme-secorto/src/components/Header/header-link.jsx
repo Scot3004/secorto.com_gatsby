@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import { Link } from 'gatsby'
 import { jsx } from 'theme-ui'
+import Header from './header'
 
 export default ({children, ...props}) => (
-  <div>
+  <Header>
     <Link {...props}
       sx={{
         color: 'primary',
@@ -15,5 +16,5 @@ export default ({children, ...props}) => (
     >
       {children}
     </Link>
-  </div>
+  </Header>
 )

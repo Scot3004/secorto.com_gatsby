@@ -1,22 +1,32 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-import Brand from './brand'
+import HomePageLink from './homepage-link'
 
-export default ({ title }) => {
+export default ({ children }) => {
   return (
     <header
       sx={{
         display: 'flex',
         alignItems: 'center',
-        boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)',
-        height: [54]
+        boxShadow: theme => `0 0 8px  ${theme.colors.primary}`,
+        minHeight: [58]
       }}
     >
       <div sx={{ mx: 'auto' }} />
 
-      <Brand title={title} />
-
+      <div
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          fontFamily: 'kalam',
+          justifyContent: 'center',
+          padding: 0,
+        }}
+      >
+        <HomePageLink />
+        <span sx={{ ml: 2, fontSize: [42], color: 'primary' }}>{children}</span>
+      </div>
       <div sx={{ mx: 'auto' }} />
     </header>
   )

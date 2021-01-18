@@ -4,12 +4,13 @@ import { Flex, css } from 'theme-ui'
 
 import Layout from './layout'
 import SEO from './seo'
+import Header from '../components/Header/header'
 import PortfolioLink from '../components/Portfolio/portfolio-link'
 import Footer from '../components/ui/page-footer'
 
 export default ({ location, posts, socialLinks }) => {
   return (
-    <Layout location={location} title="Portafolio">
+    <Layout location={location} header={<Header>Portafolio</Header>} >
       <SEO title="Portafolio" />
       <Flex
         css={css({

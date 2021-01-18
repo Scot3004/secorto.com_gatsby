@@ -10,16 +10,13 @@ const BlogLink = <HeaderLink to="/blog" >Blog</HeaderLink>
 
 const Post = ({
   data: {
-    post,
-    site: {
-      siteMetadata: { title },
-    },
+    post
   },
   location,
   previous,
   next,
 }) => (
-  <Layout location={location} title={BlogLink}>
+  <Layout location={location} header={BlogLink}>
     <SEO
       title={post.title}
       description={post.excerpt}

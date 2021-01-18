@@ -15,7 +15,7 @@ const Post = ({
   previous,
   next,
 }) => (
-  <Layout location={location} title={PortfolioLink}>
+  <Layout location={location} header={PortfolioLink}>
     <SEO
       title={post.title}
       description={post.excerpt}

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const StyledBurger = styled.button`
   position: fixed;
-  top: 0.6rem;
+  top: 0.8rem;
   left: 1rem;
   display: flex;
   flex-direction: column;

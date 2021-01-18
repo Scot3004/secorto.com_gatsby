@@ -4,13 +4,12 @@ import Helmet from 'react-helmet'
 import { SkipNavLink, SkipNavContent } from "@reach/skip-nav"
 import "@reach/skip-nav/styles.css"
 
-import Header from '../components/Header/header'
 import Sidebar from '../components/Sidebar/sidebar'
 import BurgerButton from '../components/Sidebar/burger-button'
 import useBlogThemeConfig from '../hooks/configOptions'
 import SidebarContext from '../context/SidebarContext'
 
-export default ({ children, ...props }) => {
+export default ({ children, header, ...props }) => {
   const blogThemeConfig = useBlogThemeConfig()
   const { webfontURL } = blogThemeConfig
   return (
@@ -40,7 +39,7 @@ export default ({ children, ...props }) => {
               transition: 'margin-left 0.3s ease-in-out;',
             })}
           >
-            <Header {...props} />
+            {header}
             <SkipNavContent />
             <div
               css={css({

@@ -13,14 +13,14 @@ export default () => (
         src={Logo}
         alt="logo"
         sx={{
-          width: [36, 42],
-          height: [36, 42],
+          width: [36],
+          height: [36],
           verticalAlign: 'middle',
-          border: "3px solid transparent",
           borderRadius: "50%",
-          transition: "border-color 1s",
+          transition: "box-shadow .5s",
+          boxShadow: theme => `2px 2px 8px ${theme.colors.primary}`,
           ":hover": {
-            borderColor: "hover",
+            boxShadow: theme => `2px 2px 8px ${theme.colors.hover}`,
           },
         }}></img>
     </Link>
