@@ -45,6 +45,6 @@ export default merge(typography, {
     },
   },
   fonts: {
-    'kalam': 'Kalam'
+    'title': 'Kalam'
   }
 })

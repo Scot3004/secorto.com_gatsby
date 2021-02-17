@@ -8,7 +8,6 @@ export default ({title}) => (
     sx={{
       display: 'flex',
       alignItems: 'center',
-      fontFamily: 'kalam',
       justifyContent: 'center',
       padding: 0,
     }}

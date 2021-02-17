@@ -19,13 +19,19 @@ export default ({ children }) => {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          fontFamily: 'kalam',
           justifyContent: 'center',
           padding: 0,
         }}
       >
         <HomePageLink />
-        <span sx={{ ml: 2, fontSize: [42], color: 'primary' }}>{children}</span>
+        <span sx={{
+          ml: 2,
+          fontSize: [42],
+          color: 'primary',
+          fontFamily: 'title',
+          position: 'relative',
+          top: '5px'
+        }}>{children}</span>
       </div>
       <div sx={{ mx: 'auto' }} />
     </header>
