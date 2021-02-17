@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 
 import { Link } from 'gatsby'
-import { FaBriefcase, FaBlog } from 'react-icons/fa'
+import { Work, Message } from '@emotion-icons/material-twotone'
 
 import Brand from './brand'
 import ColorModeSwitch from '../ui/color-mode-switch'
@@ -27,7 +27,7 @@ const Menu = ({ open, setOpen }) => {
           }}
           onClick={setOpen}
         >
-          <FaBlog sx={{ mr: '.4rem' }} />
+          <Message size={24} sx={{ mr: '.4rem' }} />
           Blog
         </Link>
         <Link
@@ -37,7 +37,7 @@ const Menu = ({ open, setOpen }) => {
           }}
           onClick={setOpen}
         >
-          <FaBriefcase sx={{ mr: '.4rem' }} />
+          <Work size={24} sx={{ mr: '.4rem' }} />
           Portafolio
         </Link>
         <ColorModeSwitch

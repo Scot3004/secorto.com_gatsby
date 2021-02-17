@@ -1,14 +1,16 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { FaCalendarAlt } from 'react-icons/fa'
+import { CalendarToday } from '@emotion-icons/material-twotone'
+
 
 const PostDate = ({ children, ...props}) => (
   <div
     {...props}
   >
     <small>
-      <FaCalendarAlt sx={{
-        fontSize: 12,
+      <CalendarToday size={16} sx={{
+        position: "relative",
+        top: "-2px"
       }}/> {children}
     </small>
   </div>

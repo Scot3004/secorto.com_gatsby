@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { FaStar } from 'react-icons/fa'
+import { Star } from '@emotion-icons/material-twotone'
 import TimelineElement from './timelineElement'
 
 import { useThemeUI, css } from 'theme-ui'
@@ -35,7 +35,7 @@ export default ({ data }) => {
           background: theme.colors.timeline.previousWorkBG,
           color: theme.colors.timeline.iconColor
         }}
-        icon={<FaStar />}
+        icon={<Star />}
       ></VerticalTimelineElement>
     </VerticalTimeline>
   )

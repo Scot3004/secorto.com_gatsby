@@ -1,6 +1,6 @@
 import React from 'react'
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { FaUserGraduate, FaBriefcase } from 'react-icons/fa'
+import { School, Work } from '@emotion-icons/material-twotone'
 import { useThemeUI } from 'theme-ui'
 
 export default ({ item }) => {
@@ -8,21 +8,21 @@ export default ({ item }) => {
 
   const timelineTypeProps = {
     academic: {
-      icon: <FaUserGraduate />,
+      icon: <School />,
       iconStyle: {
         background: theme.colors.timeline.academicBG,
         color: theme.colors.timeline.iconColor
       },
     },
     work: {
-      icon: <FaBriefcase />,
+      icon: <Work />,
       iconStyle: {
         background: theme.colors.timeline.previousWorkBG,
         color: theme.colors.timeline.iconColor
       },
     },
     currentWork: {
-      icon: <FaBriefcase />,
+      icon: <Work />,
       iconStyle: {
         background: theme.colors.timeline.workBG,
         color: theme.colors.timeline.iconColor

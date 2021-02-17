@@ -17,6 +17,9 @@
     "react-dom": "^17.0.1"
   },
   "dependencies": {
+    "@emotion-icons/material-twotone": "^3.6.0",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "@reach/skip-nav": "^0.11.2",
     "@theme-ui/prism": "^0.3.0",
     "@theme-ui/typography": "^0.3.0",
@@ -32,7 +35,6 @@
     "mdx-utils": "^0.2.0",
     "react-burger-menu": "^2.6.17",
     "react-helmet": "^6.1.0",
-    "react-icons": "^3.10.0",
     "react-switch": "^5.0.1",
     "simple-react-lightbox": "^3.2.3-1",
     "theme-ui": "^0.3.3",
