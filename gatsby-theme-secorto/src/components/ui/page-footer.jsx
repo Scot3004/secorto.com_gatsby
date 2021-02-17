@@ -9,7 +9,7 @@ const Footer = ({ socialLinks }) => (
     })}
   >
     © {new Date().getFullYear()},
-    Follow me on: {socialLinks
+    Sígueme en: {socialLinks
       ? socialLinks.map((platform, i, arr) => (
           <Fragment key={platform.url}>
             <Styled.a
@@ -26,11 +26,9 @@ const Footer = ({ socialLinks }) => (
         ))
       : null}
 {` `}&bull;{` `}
-    Powered by
+    Hecho usando
     {` `}
-    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>, icons by <Styled.a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer" >
-      Font awesome
-    </Styled.a>
+    <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>
   </footer>
 )
 export default Footer
