@@ -53,4 +53,4 @@ Este blog ha sido posible gracias a una serie de herramientas y utilitarios que 
 
 ## Copyright and Licenses
 
-Copyright 2020 Scot3004. Code released under the [MIT](LICENSE)
+Copyright 2021 Scot3004. Code released under the [MIT](LICENSE)
