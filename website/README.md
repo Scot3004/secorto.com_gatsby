@@ -4,7 +4,7 @@ Página personal de presentación de Sergio C. Orozco Torres
 
 ## Motivación
 
-Practicar el desarrollo front-end para fortalecer habilidades y tener una plantilla base en caso que requiera iniciar otro desarrollo similar
+La practica hace al maestro, este sitio me sirve como plataforma para pulir mis habilidades tecnicas
 
 ## Objetivos
 
@@ -14,8 +14,9 @@ Desarrollar un sitio web informativo que demuestre los conocimientos y habilidad
 
 ### Objetivos específicos
 
-- Página de presentación como desarrollador
+- Página de Inicio que muestre quien soy
 - Desarrollar blog de las cosas aprendidas
+- Mostrar los diferentes proyectos en los que he trabajado
 
 ## Scripts Incluidos
 
