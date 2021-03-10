@@ -48,10 +48,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/portafolio/*`, `/blog/*`],
-      },
+      resolve: `gatsby-plugin-offline`
     },
   ],
   siteMetadata: {
